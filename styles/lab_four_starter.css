@@ -1,0 +1,51 @@
+/* Resetting some default styles */
+body, h1, p, button {
+  margin: 0;
+  padding: 0;
+}
+
+/* Applying base font styles */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Styling the hero container */
+.hero-container {
+  background-color: #9b942c;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem; /* Add padding for better spacing */
+}
+
+/* Styling the hero title */
+.hero-container h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Styling the hero paragraph */
+.hero-container p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+/* Styling the hero button */
+.hero-container button {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: #403d58;
+  border: none;
+  cursor: pointer;
+}
