@@ -1,8 +1,13 @@
+
+body {
+  background-color: #6f6d41; 
+  margin: 0; 
+}
+
 /* Styling the hero container */
 
 .hero-container {
   position: relative;
-  background-color: rgba(155, 148, 44, 0.8); 
   color: #fff;
   min-height: 100vh;
   display: flex;
@@ -11,12 +16,39 @@
   align-items: center;
   text-align: center;
   padding: 2rem;
-  overflow: hidden; 
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(5px); 
+  z-index: -1;
+}
+
+
+.hero-container h1 {
+  font-family: 'Rowdies', sans-serif;
+  color: #ecd6bc;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero-container p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #443327;
 }
 
 /* Styling the content container */
 .content-container {
-  background-color: #cd8d5a;
+  background-color: #b48f72;
   padding: 20px;
   overflow: hidden;
   text-align: center; 
@@ -27,6 +59,15 @@
   max-width: 800px;
   margin: 0 auto;
 }
+/* Styling the content content */
+.content-content p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color:#3a2005;
+  margin-bottom:1.5rem;
+}
+
 
 /* Styling the image container */
 .image-container {
@@ -64,13 +105,22 @@ button:hover {
   color: #fff;
 }
 
-/* Style the accordion panel */
+
+/* Styling the accordion content */
+
+.accordion-content h2 {
+  color: #3d2d16;
+  font-family: 'Rowdies', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
 
 .accordion-btn {
-  background-color: #dbd56e;
-  color: #403d58; 
+  background-color: #b89a5f;
+  color: #403d58;
   cursor: pointer;
-  padding: 18px;
+  padding: 10px;
   width: 100%;
   text-align: left;
   border: none;
@@ -79,17 +129,70 @@ button:hover {
 }
 
 .accordion-btn.active, .accordion-btn:hover {
-  background-color: #cd8d5a; 
-  color: #fff; 
+  background-color: #cd8d5a;
+  color: #fff;
 }
 
 .accordion-panel {
   padding: 0 18px;
-  background-color: #dbd56e; 
-  display: none;
+  background-color: #cec584;
   overflow: hidden;
+  display: none;
+  border-radius: 12px;
 }
+
+.accordion-panel.active-panel {
+  display: block;
+}
+
 
 .accordion-panel p {
   color: #403d58;
+}
+
+
+/*Styling the footer */
+
+
+.footer-container {
+  background-color: #5d482c;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styling the copyright date */
+.footer-content p {
+  margin-bottom: 10px;
+}
+
+/* Styling the link list */
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content li {
+  margin: 0 15px;
+}
+
+.footer-content a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+/* Styling the Google Map iframe */
+.footer-content iframe {
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(112, 64, 64, 0.5);
 }
