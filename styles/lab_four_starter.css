@@ -1,20 +1,8 @@
-/* Resetting some default styles */
-body, h1, p, button {
-  margin: 0;
-  padding: 0;
-}
-
-/* Applying base font styles */
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
 /* Styling the hero container */
+
 .hero-container {
-  background-color: #9b942c;
+  position: relative;
+  background-color: rgba(155, 148, 44, 0.8); 
   color: #fff;
   min-height: 100vh;
   display: flex;
@@ -22,30 +10,37 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2rem; /* Add padding for better spacing */
+  padding: 2rem;
+  overflow: hidden; 
 }
 
-/* Styling the hero title */
-.hero-container h1 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
+/* Styling the content container */
+.content-container {
+  background-color: #cd8d5a;
+  padding: 20px;
+  overflow: hidden; 
 }
 
-/* Styling the hero paragraph */
-.hero-container p {
-  font-size: 1rem;
-  font-weight: 500;
-  margin-bottom: 1.5rem;
+/* Styling the content content */
+.content-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Styling the hero button */
-.hero-container button {
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  background-color: #fff;
-  color: #403d58;
-  border: none;
-  cursor: pointer;
+/* Styling the image container */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Styling individual images with warm frame effect */
+.image-container img {
+  width: 100%;
+  margin-bottom: 20px; 
+  border-radius: 12px; 
+  box-shadow: 0 0 25px rgba(255, 153, 0, 0.9); 
+  display: block; 
+  margin: 0 auto;
 }
