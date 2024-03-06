@@ -64,3 +64,32 @@ button:hover {
   color: #fff;
 }
 
+/* Style the accordion panel */
+
+.accordion-btn {
+  background-color: #dbd56e;
+  color: #403d58; 
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion-btn.active, .accordion-btn:hover {
+  background-color: #cd8d5a; 
+  color: #fff; 
+}
+
+.accordion-panel {
+  padding: 0 18px;
+  background-color: #dbd56e; 
+  display: none;
+  overflow: hidden;
+}
+
+.accordion-panel p {
+  color: #403d58;
+}
